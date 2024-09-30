@@ -7,69 +7,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo">Anggi <span> Kurniawan</span></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+    <header class="header">
+        <a href="#home" class="logo">Anggi <span> Kurniawan</span></a>
 
         <ul class="navlist">
+            <li><a href="#about">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <a href="https://github.com/kurniaanggii" class="visit-btn">Visit Github</a>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <img src="about.png" alt="">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Anggi Kurniawan
+                        <span><br>Web Developer</span>
+                    </h1>
+                </div>
+                <div class="btn-group">
+                    <a href="https://www.linkedin.com/in/kurniaanggii/" class="btn">Hire Me</a>
+                    <div class="btn">Download CV</div>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/kurniaanggii" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kurniaanggii/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-tittle">experience</h2>
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Frontend Developer</span>
+                    <h3>2 Year</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Backend Developer</span>
+                    <h3>1 Year</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Fullstack Developer</span>
+                    <h3>3 Year</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-list"></i>
+                    <span>UI/UX Designer</span>
+                    <h3>1 Year</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projecta">
+        <h2 class="section-tittle">Recent Projects</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="project1.png" alt="">
+                <h3>Project A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <div class="btn-group">
+                    <a href="https://revou-fundamental-course.github.io/19-aug-24-kurniaanggii/" class="btn">Live
+                        Demo</a>
+                    <a href="https://github.com/revou-fundamental-course/19-aug-24-kurniaanggii" class="btn">Source
+                        Code</a>
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="project2.png" alt="">
+                <h3>Project A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <div class="btn-group">
+                    <a href="https://smartdigi.netlify.app/" class="btn">Live Demo</a>
+                    <a href="https://github.com/kurniaanggii/smartdigilib" class="btn">Source Code</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form action="#" method="post" class="contact-form">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <div class="top-btn">
-            <a href="#home" class="h-btn">Contact me</a>
-        </div>
-    </header>
-
-    <section class="hero" id="#home">
-        <div class="main-content">
-            <h4>Hello, It's me</h4>
-            <h1>I'm <span>Anggi Dwi Kurniawan</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum iure, doloremque totam fugiat
-                asperiores eveniet blanditiis alias harum dignissimos earum! Dignissimos sint cupiditate facere facilis
-                neque optio, qui in?</p>
-            <div class="social">
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
-                <a href="#"><i class="ri-linkedin-fill"></i></a>
-                <a href="#"><i class="ri-github-fill"></i></a>
-            </div>
-            <div class="main-btn">
-                <a href="#" class="btn">Hire me</a>
-                <a href="#" class="btn2">Download CV</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="about.png">
-        </div>
-
-        <div class="about-text">
-            <h2>I am Web <span> & Mobile Developer</span></h2>
-            <div class="exp-area">
-                <p class="exp">Experience<span>1 Years</span></p>
-                <p class="exp">Speciality<span>Developer</span></p>
-                <p class="exp">Address:<span>Bandar Lampung, Lampung</span></p>
-                <p class="exp">Email:<span>kurniaanggii@gmail.com</span></p>
-            </div>
-            <a href="#" class="btn">View All Projects</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p class="copyright"> &copy 2024 Anggi Kurniawan. All rights reserved.</p>
     </footer>
 
     <!-- JS link -->

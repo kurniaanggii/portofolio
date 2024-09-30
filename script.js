@@ -1,5 +1,6 @@
-const header = document.querySelector('header');
+const menuIcon = document.querySelector("#menu-icon");
+const navList = document.querySelector(".navlist");
 
-window.addEventListener('scroll', function() => {
-    header.classList.toggle('sticky', window.scrollY > 120);
-});
+menuIcon.onclick = () => {
+  navList.classList.toggle("active");
+};
